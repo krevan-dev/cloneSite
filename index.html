@@ -37,11 +37,15 @@
   <!-- NOTE ID's in sections are for personal tracking, and should be removed after complete unless linked to. -->
 
   <body class="debug">
-    <header>
+    <header class="container-fluid sticky-top navbar-color">
       <!-- TODO NavBar -->
-      <section class="container-fluid">
-        <div class="row">
-          <div class="col-12">NavBar Placeholder</div>
+      <section class="row">
+        <div class="col-12">
+          <nav class="navbar navbar-light navbar-color">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Lorem, ipsum.</a>
+            </div>
+          </nav>
         </div>
       </section>
     </header>
@@ -49,46 +53,87 @@
     <main>
       <!-- Hero-Img & Submission Form -->
       <section class="container-fluid">
-        <div class="row">
-          <div id="submit-form" class="col-4"></div>
-          <div id="img-text" class="col-8"></div>
+        <div
+          class="row d-flex justify-content-evenly align-items-center hero-sec"
+        >
+          <div id="submit-form" class="col-md-3">
+            <h6>Subtle Heading</h6>
+            <div class="form-box"></div>
+          </div>
+          <div id="img-text text-light" class="col-md-7 d-none d-md-block">
+            <h2>Text over BG Image</h2>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque
+              quae suscipit tempora facilis est, nesciunt possimus sed
+              cupiditate odit incidunt rerum ut. Libero, veniam obcaecati dolor
+              laborum distinctio itaque molestiae!
+            </p>
+          </div>
         </div>
       </section>
       <!-- Text Box & Progress Bars -->
       <section class="container-fluid">
-        <div class="row">
-          <div id="textimonial" class="col-7"></div>
-          <div id="progressbar" class="col-5"></div>
+        <div
+          class="row d-flex justify-content-evenly align-items-center section1"
+        >
+          <div class="col-md-6 order-md-1 order-2">
+            <h2>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt
+              delectus impedit assumenda molestiae aperiam tempora?
+            </h2>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus
+              hic, magnam ullam unde voluptatibus optio libero cum sunt alias
+              blanditiis esse cumque, pariatur, praesentium nobis commodi quod
+              error minima modi? Delectus nesciunt animi quis ut, sapiente in
+              blanditiis aut accusamus velit doloremque veniam reprehenderit
+              alias veritatis aspernatur temporibus placeat sunt eveniet! Dolor,
+              magnam tempore nihil culpa pariatur omnis eaque ullam?
+            </p>
+          </div>
+          <div class="col-md-4 progress order-md-2 order-1">Test</div>
         </div>
       </section>
       <!-- Placeholder Image & Large Text Box -->
       <section class="container-fluid">
-        <div class="row">
-          <div id="pholder" class="col-4"></div>
-          <div id="ph-text" class="col-8"></div>
+        <div
+          class="row d-flex justify-content-evenly align-items-center section2"
+        >
+          <div id="pholder" class="col-md-3">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+          </div>
+          <div id="ph-text" class="col-md-7">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          </div>
         </div>
       </section>
       <!-- Info Cards -->
       <section class="container-fluid">
-        <div class="row d-flex justify-content-evenly">
-          <div id="text-card1" class="col-3"></div>
-          <div id="text-card2" class="col-3"></div>
-          <div id="text-card3" class="col-3"></div>
+        <div
+          class="row d-flex justify-content-evenly align-items-center section3"
+        >
+          <div id="text-card1" class="col-md-3 order-1 order-md-2">
+            Text Box 1
+          </div>
+          <div id="text-card2" class="col-md-3 order-2 order-md-1">
+            Text Box 2
+          </div>
+          <div id="text-card3" class="col-md-3 order-3">Text Box 3</div>
         </div>
       </section>
       <!-- 2 Text columns at bottom of page. -->
       <section class="container-fluid">
-        <div class="row">
-          <div id="textbar1" class="col-12"></div>
-          <div id="textbar2" class="col-12"></div>
+        <div class="row justify-content-center align-items-center section4">
+          <div id="textbar1" class="col-12">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. In
+            inventore et mollitia dicta fugit? Sed quos ad dolor quas tempora
+            ullam aliquam quae ex consequatur corporis, obcaecati eaque sapiente
+            placeat?
+          </div>
         </div>
       </section>
       <!-- Footer (if needed) -->
-      <footer class="container-fluid">
-        <div class="row">
-          <div class="col-12"></div>
-        </div>
-      </footer>
+      <footer class="container-fluid"></footer>
     </main>
   </body>
 </html>

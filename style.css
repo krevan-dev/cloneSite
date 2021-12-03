@@ -2,8 +2,45 @@
   --bg: #e5e5e5;
   --primary: #07ab80;
   --secondary: #f8f8f8;
+  --white: #ffffff;
+  --ph-bg: #5b636e;
+  --ph-img: url("http://thiscatdoesnotexist.com");
 }
 
-.row {
-  height: 5vh;
+.navbar-color {
+  background-color: var(--primary);
+}
+
+.hero-sec {
+  height: 60vh;
+  background-color: var(--ph-bg);
+}
+
+.section1 {
+  height: 30vh;
+  background-color: var(--primary);
+}
+.progress {
+  height: 200px;
+  width: 400px;
+  background-color: var(--bg);
+}
+
+.section2 {
+  height: 70vh;
+  background-color: var(--white);
+}
+.section3 {
+  height: 20vh;
+  background-color: var(--secondary);
+}
+.section4 {
+  height: 20vh;
+  background-color: var(--primary);
+}
+
+.form-box {
+  background-color: var(--bg);
+  height: 300px;
+  width: 300px;
 }

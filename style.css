@@ -1,4 +1,9 @@
 :root {
   --bg: #e5e5e5;
-  --primary: ;
+  --primary: #07ab80;
+  --secondary: #f8f8f8;
+}
+
+.row {
+  height: 5vh;
 }

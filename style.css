@@ -55,8 +55,8 @@
   border-radius: 5px;
 }
 
-input {
-  max-width: 20vw;
+.long {
+  max-width: 18vw;
 }
 
 .card {
@@ -74,6 +74,10 @@ input {
 @media (max-width: 767px) {
   .hidden {
     display: none;
+  }
+
+  .long {
+    max-width: 75vw;
   }
 }
 

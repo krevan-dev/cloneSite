@@ -23,6 +23,7 @@
   min-height: 30vh;
   background-color: var(--primary);
 }
+
 .progress {
   height: 200px;
   width: 400px;
@@ -34,12 +35,14 @@
 
 .section2 {
   min-height: 55vh;
-  background-color: var(--white);
-}
-.section3 {
-  min-height: 20vh;
   background-color: var(--secondary);
 }
+
+.section3 {
+  min-height: 20vh;
+  background-color: var(--white);
+}
+
 .section4 {
   min-height: 20vh;
   background-color: var(--primary);

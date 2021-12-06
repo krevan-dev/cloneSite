@@ -1,110 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Meow+Script&display=swap"
+      rel="stylesheet"
+    />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Meow+Script&display=swap" rel="stylesheet">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css"
+      integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@mdi/font@6.5.95/css/materialdesignicons.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
-  <link rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css"
-    integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
-  <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/@mdi/font@6.5.95/css/materialdesignicons.min.css'>
-  <link rel="stylesheet" href="style.css" />
-</head>
-
-<style>
-  /* This is for wire framing to see our rows/columns.
+  <style>
+    /* This is for wire framing to see our rows/columns.
   DON'T FORGET DEBUG CLASS ON BODY TAG */
-  body.debug .container,
-  body.debug .container-fluid {
-    outline: 2px double blue;
-    outline-offset: -2px;
-  }
+    body.debug .container,
+    body.debug .container-fluid {
+      outline: 2px double blue;
+      outline-offset: -2px;
+    }
 
-  body.debug .row {
-    outline: 2px dashed red;
-    outline-offset: -2px;
-  }
+    body.debug .row {
+      outline: 2px dashed red;
+      outline-offset: -2px;
+    }
 
-  body.debug [class*="col-"] {
-    outline: 2px dotted forestgreen;
-    outline-offset: -3px;
-  }
-</style>
+    body.debug [class*="col-"] {
+      outline: 2px dotted forestgreen;
+      outline-offset: -3px;
+    }
+  </style>
 
-<!-- NOTE ID's in sections are for personal tracking, and should be removed after complete unless linked to. -->
+  <!-- NOTE ID's in sections are for personal tracking, and should be removed after complete unless linked to. -->
 
-<body class="">
-  <header class="container-fluid sticky-top navbar-color">
-    <section class="row">
-      <div class="col-12">
-        <nav class="navbar navbar-light navbar-color">
-          <div class="container-fluid">
-            <a class="navbar-brand fs-2 meow mdi mdi-exclamation-thick" href="#halfway">Lorem ipsum.</a>
-          </div>
-        </nav>
-      </div>
-    </section>
-  </header>
+  <body class="">
+    <header class="container-fluid sticky-top navbar-color">
+      <section class="row">
+        <div class="col-12">
+          <nav class="navbar navbar-light navbar-color">
+            <div class="container-fluid">
+              <a
+                class="navbar-brand fs-2 meow mdi mdi-exclamation-thick"
+                href="#halfway"
+                >Lorem ipsum.</a
+              >
+            </div>
+          </nav>
+        </div>
+      </section>
+    </header>
 
-  <main>
-    <!-- NOTE Hero-Img & Submission Form -->
-    <section class="container-fluid">
-      <div class="row justify-content-evenly align-items-center hero-sec">
-        <div id="submit-form" class="col-md-3 col-12 p-3">
-          <h6 class="text-light">Subtle Heading</h6>
-          <div class="row justify-content-center p-4">
-            <div class="form-box form-group justify-content-center">
-              <h4>Less Subtle Heading</h4>
-              <div>
-                <input class="form-control m-2 long" type="text" placeholder="NAME" />
-                <input class="form-control m-2 long" type="text" placeholder="EMAIL" />
-                <div class="input-group">
-                  <input class="form-control m-2" type="text" placeholder="PHONE" />
-                  <input class="form-control m-2" type="text" placeholder="EXT.?" />
+    <main>
+      <!-- NOTE Hero-Img & Submission Form -->
+      <section class="container-fluid">
+        <div class="row justify-content-evenly align-items-center hero-sec">
+          <div id="submit-form" class="col-md-3 col-12 p-3">
+            <h6 class="text-light">Subtle Heading</h6>
+            <div class="row justify-content-center p-4">
+              <div class="form-box form-group justify-content-center">
+                <h4>Less Subtle Heading</h4>
+                <div>
+                  <input
+                    class="form-control m-2 long"
+                    type="text"
+                    placeholder="NAME"
+                  />
+                  <input
+                    class="form-control m-2 long"
+                    type="text"
+                    placeholder="EMAIL"
+                  />
+                  <div class="input-group">
+                    <input
+                      class="form-control m-2"
+                      type="text"
+                      placeholder="PHONE"
+                    />
+                    <input
+                      class="form-control m-2"
+                      type="text"
+                      placeholder="EXT.?"
+                    />
+                  </div>
+                  <input
+                    class="form-control m-2 long"
+                    type="text"
+                    placeholder="MESSAGE"
+                  />
+                  <input class="m-2" type="checkbox" name="" id="" />
+                  checking this box you agree
+                  <input class="m-2 btn" type="button" value="Submit" />
                 </div>
-                <input class="form-control m-2 long" type="text" placeholder="MESSAGE" />
-                <input class=" m-2" type="checkbox" name="" id="" />
-                checking this box you agree
-                <input class=" m-2 btn" type="button" value="Submit" />
               </div>
             </div>
           </div>
+          <div id="img-text" class="col-md-8 hidden">
+            <h2 class="text-light mdi mdi-star-shooting">Text over BG Image</h2>
+            <p class="text-light">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque
+              quae suscipit tempora facilis est, nesciunt possimus sed
+              cupiditate odit incidunt rerum ut. Libero, veniam obcaecati dolor
+              laborum distinctio itaque molestiae!
+            </p>
+          </div>
         </div>
-        <div id="img-text" class="col-md-8 hidden">
-          <h2 class="text-light mdi mdi-star-shooting">Text over BG Image</h2>
-          <p class="text-light">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque
-            quae suscipit tempora facilis est, nesciunt possimus sed
-            cupiditate odit incidunt rerum ut. Libero, veniam obcaecati dolor
-            laborum distinctio itaque molestiae!
-          </p>
-        </div>
-      </div>
-    </section>
-    <!-- NOTE Text Box & Progress Bars -->
-    <section class="container-fluid">
-      <div class="row justify-content-evenly align-items-center section1 p-3">
-        <div class="col-md-7 order-md-1 order-2 my-3">
-          <h2 class="text-light mdi mdi-bell">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-          </h2>
-          <p class="text-light">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus
-            hic, magnam ullam unde voluptatibus optio libero cum sunt alias
-            blanditiis esse cumque, pariatur, praesentium nobis commodi quod
-            error minima modi?
-          </p>
-        </div>
-        <div class="
+      </section>
+      <!-- NOTE Text Box & Progress Bars -->
+      <section class="container-fluid">
+        <div class="row justify-content-evenly align-items-center section1 p-3">
+          <div class="col-md-7 order-md-1 order-2 my-3">
+            <h2 class="text-light mdi mdi-bell">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            </h2>
+            <p class="text-light">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus
+              hic, magnam ullam unde voluptatibus optio libero cum sunt alias
+              blanditiis esse cumque, pariatur, praesentium nobis commodi quod
+              error minima modi?
+            </p>
+          </div>
+          <div
+            class="
               my-3
               col-md-5
               order-md-2 order-1
@@ -114,83 +151,98 @@
               align-items-end
               progress
               text-dark
-            ">
-          <progress class="w-100" max="100" value="25"></progress>
-          <progress class="w-100" max="100" value="75"></progress>
-          <progress class="w-100" max="100" value="90"></progress>
-          <progress class="w-100" max="100" value="45"></progress>
-          <progress class="w-100" max="100" value="100"></progress>
-        </div>
-      </div>
-    </section>
-    <!-- NOTE Placeholder Image & Large Text Box -->
-    <section id="halfway" class="container-fluid">
-      <div class="row justify-content-evenly align-items-center section2 p-3">
-        <div id="pholder d-flex" class="col-md-4 my-3">
-          <img class="doge img-fluid mx-auto d-block"
-            src="https://images.unsplash.com/photo-1625927874368-23ea599dded4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
-            alt="" />
-        </div>
-        <div id="ph-text" class="col-md-8">
-          <h2 class="mdi mdi-shield"> Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Blanditiis voluptatibus fugiat consequatur ipsa quis odit quia
-            quibusdam consectetur laboriosam corporis?
-          </p>
-        </div>
-      </div>
-    </section>
-    <!-- NOTE Info Cards -->
-    <section class="container-fluid">
-      <div class="row justify-content-evenly align-items-center section3 my-2">
-        <div id="text-card1" class="col-md-4 col-11 order-md-2 text-center card p-3">
-          <div class="row-reverse align-items-center">
-            <i class="mdi mdi-star fs-1"></i>
-            <i class="mdi mdi-star fs-1"></i>
-            <i class="mdi mdi-star fs-1"></i>
+            "
+          >
+            <progress class="w-100" max="100" value="25"></progress>
+            <progress class="w-100" max="100" value="75"></progress>
+            <progress class="w-100" max="100" value="90"></progress>
+            <progress class="w-100" max="100" value="45"></progress>
+            <progress class="w-100" max="100" value="100"></progress>
           </div>
-          <p class="fs-5">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-            Voluptatum tenetur corrupti est commodi illo? Aut cum enim maiores
-            non, quae, atque architecto dicta exercitationem earum dolorem
-            neque aliquam illo soluta?
-          </p>
         </div>
-        <div id="text-card2" class="col-md-3 col-11 order-md-1 text-center card p-3">
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum
-            labore repudiandae dolor quod aut exercitationem maxime neque
-            itaque voluptates dolorem laboriosam sed recusandae hic alias
-            molestiae, fugit qui. Voluptatibus, nesciunt.
-          </p>
+      </section>
+      <!-- NOTE Placeholder Image & Large Text Box -->
+      <section id="halfway" class="container-fluid">
+        <div class="row justify-content-evenly align-items-center section2 p-3">
+          <div id="pholder d-flex" class="col-md-4 my-3">
+            <img
+              class="doge img-fluid mx-auto d-block"
+              src="https://images.unsplash.com/photo-1625927874368-23ea599dded4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+              alt=""
+            />
+          </div>
+          <div id="ph-text" class="col-md-8">
+            <h2 class="mdi mdi-shield">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Blanditiis voluptatibus fugiat consequatur ipsa quis odit quia
+              quibusdam consectetur laboriosam corporis?
+            </p>
+          </div>
         </div>
-        <div id="text-card3" class="col-md-3 col-11 order-md-3 text-center card p-3">
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit
-            deserunt quibusdam voluptate, saepe, consequatur doloremque beatae
-            fuga quod fugit iure dicta unde ipsum eum labore delectus
-            repudiandae asperiores quia facere?
-          </p>
+      </section>
+      <!-- NOTE Info Cards -->
+      <section class="container-fluid">
+        <div
+          class="row justify-content-evenly align-items-center section3 my-2"
+        >
+          <div
+            id="text-card1"
+            class="col-md-4 col-11 order-md-2 text-center card p-3"
+          >
+            <div class="row-reverse align-items-center">
+              <i class="mdi mdi-star fs-1"></i>
+              <i class="mdi mdi-star fs-1"></i>
+              <i class="mdi mdi-star fs-1"></i>
+            </div>
+            <p class="fs-5">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptatum tenetur corrupti est commodi illo? Aut cum enim maiores
+              non, quae, atque architecto dicta exercitationem earum dolorem
+              neque aliquam illo soluta?
+            </p>
+          </div>
+          <div
+            id="text-card2"
+            class="col-md-3 col-11 order-md-1 text-center card p-3"
+          >
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum
+              labore repudiandae dolor quod aut exercitationem maxime neque
+              itaque voluptates dolorem laboriosam sed recusandae hic alias
+              molestiae, fugit qui. Voluptatibus, nesciunt.
+            </p>
+          </div>
+          <div
+            id="text-card3"
+            class="col-md-3 col-11 order-md-3 text-center card p-3"
+          >
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit
+              deserunt quibusdam voluptate, saepe, consequatur doloremque beatae
+              fuga quod fugit iure dicta unde ipsum eum labore delectus
+              repudiandae asperiores quia facere?
+            </p>
+          </div>
         </div>
-      </div>
-    </section>
-    <!-- NOTE 2 Text columns at bottom of page. -->
-    <section class="container-fluid">
-      <div class="row justify-content-center align-items-center section4">
-        <div id="textbar1" class="col-12">
-          <p class="text-center">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. In
-            inventore et mollitia dicta fugit? Sed quos ad dolor quas tempora
-            ullam aliquam quae ex consequatur corporis, obcaecati eaque
-            sapiente placeat?
-          </p>
+      </section>
+      <!-- NOTE 2 Text columns at bottom of page. -->
+      <section class="container-fluid">
+        <div class="row justify-content-center align-items-center section4">
+          <div id="textbar1" class="col-12">
+            <p class="text-center">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. In
+              inventore et mollitia dicta fugit? Sed quos ad dolor quas tempora
+              ullam aliquam quae ex consequatur corporis, obcaecati eaque
+              sapiente placeat?
+            </p>
+          </div>
         </div>
-      </div>
-    </section>
-    <!-- NOTE Footer (if needed) -->
-    <footer class="container-fluid"></footer>
-  </main>
-</body>
-
+      </section>
+      <!-- NOTE Footer (if needed) -->
+      <footer class="container-fluid"></footer>
+    </main>
+  </body>
 </html>
